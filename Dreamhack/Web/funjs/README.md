@@ -54,4 +54,5 @@ var _0x1046=['2XStRDS','1388249ruyIdZ','length','23461saqTxt','9966Ahatiq','1824
 ```
 
 그리고 _0x374fd6(0x17c) 와 _0x374fd6(0x185)를 콘솔창에 입력하여 확인하여보면 length와 NOP !인 것을 확인할 수 있습니다.
+![image1](./1.png)
 
