@@ -16,7 +16,7 @@ function moveBox() {
 }
 ```
 여기를 삭제해줍시다.
-
+<br/><br/>
 이후 자바스크립트 main함수의 코드를 개발자모드 콘솔에서 실행시켜줍니다.
 ```
 var _0x1046=['2XStRDS','1388249ruyIdZ','length','23461saqTxt','9966Ahatiq','1824773xMtSgK','1918853csBQfH','175TzWLTY','flag','getElementById','94hQzdTH','NOP\x20!','11sVVyAj','37594TRDRWW','charCodeAt','296569AQCpHt','fromCharCode','1aqTvAU'];
@@ -52,7 +52,25 @@ var _0x1046=['2XStRDS','1388249ruyIdZ','length','23461saqTxt','9966Ahatiq','1824
             }],
             getchar = String[_0x374fd6(0x178)];
 ```
-
+<br/><br/>
 그리고 _0x374fd6(0x17c) 와 _0x374fd6(0x185)를 콘솔창에 입력하여 확인하여보면 length와 NOP !인 것을 확인할 수 있습니다.
-![image1](./1.png)
+![image1](./1.PNG)   
+<br/><br/>
+나머지 코드를 살펴보면 아래와 같은 코드에서 for문을 통해 flag를 비교함을 알 수 있다.
+```
+for (var i = 0x0; i < flag[_0x374fd6(0x17c)]; i++) {
+    if (flag[_0x374fd6(0x176)](i) == operator[i % operator[_0x374fd6(0x17c)]](_0x4949[i], _0x42931[i])) {} else {
+        text2img(_0x374fd6(0x185));
+        return;
+    }
+}
+```
 
+이것을 참고하여 다음과 같이 코드를 작성하면 flag를 획득할 수 있다.
+```
+answer = ""
+for (var i = 0x0; i < 0x24; i++) {
+    answer += String.fromCharCode(operator[i % operator[_0x374fd6(0x17c)]](_0x4949[i], _0x42931[i]))
+}
+```
+![image2](./2.PNG)
