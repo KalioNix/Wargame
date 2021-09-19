@@ -1,6 +1,6 @@
 # funjs
 
-처음 들어가면 입력 폼이 움직이고 디버거 모드가 되어있으므로 코드를 삭제해줍시다.
+처음 들어가면 입력 폼이 움직이고 디버거 모드가 되어있으므로 코드를 삭제해준다.
 
 ```
 setInterval(moveBox,1000);
@@ -15,9 +15,9 @@ function moveBox() {
     debugger;
 }
 ```
-여기를 삭제해줍시다.
+여기를 삭제하고
 <br/><br/>
-이후 자바스크립트 main함수의 코드를 개발자모드 콘솔에서 실행시켜줍니다.
+자바스크립트 main함수의 코드를 개발자모드 콘솔에서 실행시킨다.
 ```
 var _0x1046=['2XStRDS','1388249ruyIdZ','length','23461saqTxt','9966Ahatiq','1824773xMtSgK','1918853csBQfH','175TzWLTY','flag','getElementById','94hQzdTH','NOP\x20!','11sVVyAj','37594TRDRWW','charCodeAt','296569AQCpHt','fromCharCode','1aqTvAU'];
         var _0x376c = function(_0xed94a5, _0xba8f0f) {
@@ -53,7 +53,7 @@ var _0x1046=['2XStRDS','1388249ruyIdZ','length','23461saqTxt','9966Ahatiq','1824
             getchar = String[_0x374fd6(0x178)];
 ```
 <br/><br/>
-그리고 _0x374fd6(0x17c) 와 _0x374fd6(0x185)를 콘솔창에 입력하여 확인하여보면 length와 NOP !인 것을 확인할 수 있습니다.
+그리고 _0x374fd6(0x17c) 와 _0x374fd6(0x185)를 콘솔창에 입력하여 확인하여보면 length와 NOP !인 것을 확인할 수 있다.
 ![image1](./1.PNG)   
 <br/><br/>
 나머지 코드를 살펴보면 아래와 같은 코드에서 for문을 통해 flag를 비교함을 알 수 있다.
