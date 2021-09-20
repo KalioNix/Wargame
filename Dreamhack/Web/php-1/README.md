@@ -21,15 +21,18 @@
 ```
 또한 view.php에서는 flag 문자열을 필터링 하는 것을 알 수 있다.   
 ![image1](1.PNG)   
-flag 문자열을 필터링 당한 모습이다.
-<br/>
-<br/>
+flag 문자열을 필터링 당한 모습이다.   
+<br/>   
 이러한 필터링은 php wrapper를 이용하면 우회할 수 있다.
-
 php://filter의 경우, 서버안의 문서들을 열람할 수 있게 해주며
 다음과 같은 방법을 활용하면, base64로 인코딩된 파일을 얻을 수 있다.
 ```
  www.[웹사이트주소]/?file=php://filter/convert.base64-encode/resource=파일명
-```
+```   
+<br/>
+이 방법을 이용하여 LFI를 시도하면 flag.php파일의 내용을 base64로 인코딩된 상태로 볼 수있다.   
 
+![image2](2.PNG)   
 
+<br/>
+이를 디코딩하면 flag를 획득할 수 있다.
