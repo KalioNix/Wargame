@@ -28,8 +28,9 @@ def forgot_password():
 <br/>
 
 일단 admin 권한을 가진 계정을 찾아야한다.   
-/user/<int:useridx> 페이지에서 admin 권한을 가진 계정을 찾을 수 있다.   
-image   
+/user/useridx 페이지에서 admin 권한을 가진 계정을 찾을 수 있다.   
+<br/>   
+![](1.PNG)   
 Apple 계정이 admin 권한을 가진 것을 확인했다.   
 <br/>
 
@@ -54,6 +55,9 @@ for i in range(100):
     th = threading.Thread(target=crack, args=(i,))
     th.start()
 ```   
+<br/>
+
+![](2.PNG)   
 
 Apple 계정으로 로그인 하고 /admin 페이지에 들어가면 flag를 획득할 수 있다.
 
