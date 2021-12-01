@@ -7,7 +7,7 @@ admin이란 문자열이 있으면 제거한다.
 <br/>
 
 
-
+![](1.PNG)
 ```
 ?id=admadminin
 ```
