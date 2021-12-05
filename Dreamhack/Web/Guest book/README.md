@@ -21,14 +21,14 @@ function addLink($content){
 ## 웹 사이트 구조   
 * GuestBook.php   
 
-
+![](1.PNG)   
 문자열을 입력하면 그대로 출력해준다.   
 만약 [text](링크 url) 형태로 작성할 경우, a 태그로 변경해준다.   
 <br/>
 
 * Report.php
 
-
+![](2.PNG)   
 오류가 발생하는 페이지를 Report 하는 서비스가 구현되어있다.   
 Report 시, admin 봇이 페이지를 조회한다.   
 <br/>
