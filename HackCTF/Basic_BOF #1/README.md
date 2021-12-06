@@ -1,5 +1,6 @@
 # Basic_BOF #1
 
+![](1.PNG)   
 IDA로 분석해보면 변수 v5가 0xdeadbeef이면 flag를 얻을 수 있다.   
 <br/>
 
