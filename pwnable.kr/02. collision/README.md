@@ -33,7 +33,7 @@ int main(int argc, char* argv[]){
 		printf("wrong passcode.\n");
 	return 0;
 }
-```
+```   
 
 * 인자 값의 길이는 20바이트여야 한다.   
 ```
@@ -58,4 +58,8 @@ if(hashcode == check_password( argv[1] )){
 
 
 ## Writeup
+0x21DD09EC를 5개로 나누면 0x06C5CEC8 4개와 0x06C5CECC 1개이다.   
+따라서 리틀 엔디안에 맞춰 이 값을 넣어주면 flag를 얻을 수 있다.   
+</br>
 
+![](1.PNG)
