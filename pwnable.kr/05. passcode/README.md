@@ -115,4 +115,4 @@ name과 passcode1의 차이는 0x60이다.
 * system("/bin/sh flag");의 주소는 10진수로 넣는다.   
 </br>
 
-![](6.PNG)
+![](7.PNG)
